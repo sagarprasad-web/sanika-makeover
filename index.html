@@ -1,0 +1,2162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- SEO & Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sanika Makeover | Premium Bridal Makeup Artist & Hairstyling</title>
+    <meta
+      name="description"
+      content="Sanika Makeover - Award-winning bridal makeup artist specializing in luxury bridal, engagement, party makeup and professional hairstyling for weddings. Book your dream bridal look today."
+    />
+    <meta
+      name="keywords"
+      content="bridal makeup, makeup artist, wedding makeup, hairstyling, engagement makeup, party makeup, professional makeup"
+    />
+    <meta name="author" content="Sanika Makeover" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Sanika Makeover | Premium Bridal Makeup Artist"
+    />
+    <meta
+      property="og:description"
+      content="Transform your wedding day with luxury bridal makeup and hairstyling services."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#d88b9e" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23d88b9e'>✨</text></svg>"
+    />
+
+    <style>
+      /* ==================== CSS VARIABLES & ROOT ==================== */
+      :root {
+        --bg: #fff8f5;
+        --bg-secondary: #f6ece8;
+        --surface: rgba(255, 255, 255, 0.95);
+        --surface-strong: #ffffff;
+        --text: #2c1a1f;
+        --text-secondary: #3a1f24;
+        --muted: #7a5c67;
+        --primary: #d88b9e;
+        --primary-light: #e6a8b5;
+        --primary-dark: #c56f7f;
+        --accent: #b08364;
+        --accent-light: #c4a08b;
+        --gold: #d6b57b;
+        --gold-light: #dfc599;
+        --shadow-sm: 0 2px 8px rgba(105, 63, 67, 0.08);
+        --shadow: 0 20px 50px rgba(105, 63, 67, 0.12);
+        --shadow-lg: 0 28px 70px rgba(105, 63, 67, 0.18);
+        scroll-behavior: smooth;
+      }
+
+      /* ==================== GLOBAL STYLES ==================== */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(180deg, var(--bg) 0%, var(--bg-secondary) 100%);
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+        letter-spacing: 0.3px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.25s ease;
+      }
+
+      /* ==================== HEADER & NAVIGATION ==================== */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(255, 248, 245, 0.96);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(215, 155, 142, 0.18);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .container {
+        width: min(1200px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 1rem 0;
+      }
+
+      .brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--text-secondary);
+        transition: transform 0.25s ease;
+        white-space: nowrap;
+      }
+
+      .brand:hover {
+        transform: translateY(-2px);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        flex: 1;
+        justify-content: center;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        position: relative;
+        transition: color 0.25s ease;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--primary), var(--gold));
+        transition: width 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      /* ==================== BUTTONS ==================== */
+      .button-primary,
+      .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 0.95rem 2rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, var(--primary), var(--gold));
+        color: #fff;
+        box-shadow: 0 18px 35px rgba(216, 139, 158, 0.22);
+      }
+
+      .button-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 25px 45px rgba(216, 139, 158, 0.32);
+      }
+
+      .button-primary:active {
+        transform: translateY(-1px);
+      }
+
+      .button-secondary {
+        background: transparent;
+        color: var(--text);
+        border: 2px solid rgba(140, 91, 97, 0.3);
+      }
+
+      .button-secondary:hover {
+        background: rgba(216, 139, 158, 0.1);
+        border-color: var(--primary);
+        transform: translateY(-2px);
+      }
+
+      /* ==================== HERO SECTION ==================== */
+      .hero {
+        min-height: auto;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: center;
+        gap: 3rem;
+        padding: 4rem 0 2rem;
+      }
+
+      .hero-copy {
+        max-width: 620px;
+        animation: fadeInUp 0.8s ease-out 0.1s both;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--primary);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1.5rem;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 32px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--primary), var(--gold));
+        border-radius: 1px;
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        margin: 0.5rem 0 1.5rem;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        color: var(--text-secondary);
+        font-weight: 700;
+      }
+
+      .hero-copy > p {
+        margin: 1.5rem 0 2rem;
+        max-width: 34rem;
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      .hero-image {
+        position: relative;
+        display: grid;
+        place-items: center;
+        animation: fadeInRight 0.8s ease-out 0.2s both;
+      }
+
+      .hero-image::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 85%;
+        top: 7%;
+        left: 5%;
+        background: radial-gradient(circle at 35% 35%, rgba(216, 139, 158, 0.2), transparent 70%);
+        filter: blur(40px);
+        z-index: 0;
+      }
+
+      .hero-card {
+        position: relative;
+        border-radius: 40px;
+        background: var(--surface);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+        min-height: 450px;
+        z-index: 1;
+      }
+
+      .hero-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* ==================== SECTIONS ==================== */
+      section {
+        padding: 7rem 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-title span {
+        display: inline-block;
+        color: var(--primary);
+        letter-spacing: 0.2em;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 1.25rem;
+        background: rgba(216, 139, 158, 0.08);
+        border-radius: 30px;
+      }
+
+      .section-title h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 4vw, 3.25rem);
+        line-height: 1.15;
+        color: var(--text-secondary);
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .section-title p {
+        margin-top: 1rem;
+        max-width: 700px;
+        color: var(--muted);
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      /* ==================== ABOUT SECTION ==================== */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      .about-text h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.65rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-secondary);
+        font-weight: 700;
+      }
+
+      .about-text p {
+        margin-bottom: 1.5rem;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .feature-list {
+        display: grid;
+        gap: 1.2rem;
+        margin-top: 1.5rem;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2rem;
+        color: var(--text);
+      }
+
+      .feature-item span {
+        min-width: 40px;
+        min-height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), var(--gold));
+        display: grid;
+        place-items: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+
+      .feature-item p {
+        margin: 0;
+        padding-top: 0.2rem;
+      }
+
+      .about-image {
+        position: relative;
+        padding: 1.5rem;
+        border-radius: 40px;
+        box-shadow: var(--shadow-lg);
+        background: var(--surface);
+      }
+
+      .about-image img {
+        border-radius: 32px;
+        box-shadow: 0 26px 60px rgba(163, 99, 106, 0.2);
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* ==================== SERVICES SECTION ==================== */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .service-card {
+        background: var(--surface-strong);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+      }
+
+      .service-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(216, 139, 158, 0.05), transparent);
+        pointer-events: none;
+        border-radius: 28px;
+      }
+
+      .service-card:hover {
+        transform: translateY(-12px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .service-card .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(216, 139, 158, 0.15), rgba(214, 181, 123, 0.1));
+        color: var(--primary);
+        font-size: 2.2rem;
+      }
+
+      .service-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: var(--text-secondary);
+        font-weight: 600;
+      }
+
+      .service-card p {
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      /* ==================== GALLERY SECTION ==================== */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+      }
+
+      .gallery-card {
+        position: relative;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        cursor: pointer;
+        /* group: "gallery"; */
+        aspect-ratio: 1;
+        background: var(--surface);
+      }
+
+      .gallery-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 28px;
+        transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        display: block;
+      }
+
+      .gallery-card:hover img {
+        transform: scale(1.08);
+      }
+
+      .gallery-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 28px;
+        background: linear-gradient(180deg, transparent 40%, rgba(44, 26, 31, 0.35));
+        pointer-events: none;
+      }
+
+      .gallery-label {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+      }
+
+      /* ==================== PRICING SECTION ==================== */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        align-items: stretch;
+      }
+
+      .pricing-card {
+        padding: 2.5rem;
+        border: 1px solid rgba(208, 147, 154, 0.18);
+        border-radius: 28px;
+        background: var(--surface-strong);
+        box-shadow: var(--shadow);
+        transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .pricing-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(216, 139, 158, 0.05), transparent);
+        pointer-events: none;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-12px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .pricing-card.popular {
+        border-color: var(--primary);
+        background: linear-gradient(180deg, rgba(255, 241, 239, 0.98) 0%, #fff 100%);
+        border-width: 2px;
+        transform: scale(1.05);
+      }
+
+      .pricing-card.popular:hover {
+        transform: scale(1.05) translateY(-12px);
+      }
+
+      .pricing-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--primary), var(--gold));
+        color: #fff;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+      }
+
+      .pricing-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.65rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-secondary);
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+      }
+
+      .pricing-card .price {
+        font-size: 2.5rem;
+        margin: 1rem 0 0.5rem;
+        color: var(--primary);
+        letter-spacing: -0.02em;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+      }
+
+      .pricing-card .price span {
+        font-size: 1rem;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .pricing-card > p {
+        color: var(--muted);
+        margin: 1rem 0 1.5rem;
+        font-size: 0.95rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .pricing-card ul {
+        list-style: none;
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        color: var(--text);
+        position: relative;
+        z-index: 1;
+      }
+
+      .pricing-card li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .pricing-card li::before {
+        content: "✓";
+        color: var(--gold);
+        font-weight: 700;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+
+      .pricing-card button {
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+        background: linear-gradient(135deg, var(--primary), var(--gold));
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        position: relative;
+        z-index: 1;
+      }
+
+      .pricing-card button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(216, 139, 158, 0.3);
+      }
+
+      /* ==================== TESTIMONIALS SECTION ==================== */
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+      }
+
+      .testimonial-card {
+        padding: 2.5rem;
+        position: relative;
+        overflow: hidden;
+        background: var(--surface-strong);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      .testimonial-card::before {
+        content: "❝";
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 5rem;
+        color: rgba(216, 139, 158, 0.1);
+        font-family: "Playfair Display", serif;
+        line-height: 1;
+        z-index: 0;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .testimonial-card p {
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+        min-height: 100px;
+        position: relative;
+        z-index: 1;
+        line-height: 1.8;
+        font-style: italic;
+      }
+
+      .star-rating {
+        display: flex;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .star {
+        color: var(--gold);
+        font-size: 1.1rem;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .testimonial-author img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--primary);
+      }
+
+      .testimonial-author div h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+        color: var(--text-secondary);
+        font-weight: 600;
+      }
+
+      .testimonial-author div span {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      /* ==================== CONTACT SECTION ==================== */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        align-items: stretch;
+        gap: 2rem;
+      }
+
+      .contact-card {
+        padding: 2.5rem;
+        display: grid;
+        gap: 1.75rem;
+        background: var(--surface-strong);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .contact-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-secondary);
+        font-weight: 700;
+      }
+
+      .contact-card > p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .contact-info {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .contact-item {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .contact-item span {
+        font-weight: 600;
+        color: var(--text);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .contact-item a {
+        color: var(--primary);
+        font-size: 1.05rem;
+        transition: color 0.25s ease;
+      }
+
+      .contact-item a:hover {
+        color: var(--gold);
+      }
+
+      .contact-form {
+        display: grid;
+        gap: 1.25rem;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        border: 1px solid rgba(209, 164, 154, 0.4);
+        border-radius: 16px;
+        padding: 1rem 1.2rem;
+        background: rgba(255, 255, 255, 0.8);
+        color: var(--text);
+        font: inherit;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+      }
+
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: rgba(122, 92, 103, 0.5);
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: #fff;
+        box-shadow: 0 0 0 3px rgba(216, 139, 158, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .contact-form textarea {
+        min-height: 160px;
+        resize: vertical;
+        font-family: inherit;
+      }
+
+      .contact-form button {
+        width: fit-content;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        border: none;
+        background: linear-gradient(135deg, var(--primary), var(--gold));
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .contact-form button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(216, 139, 158, 0.3);
+      }
+
+      /* ==================== FOOTER ==================== */
+      footer {
+        padding: 4rem 0 2rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(215, 155, 142, 0.18);
+        background: linear-gradient(180deg, transparent, rgba(255, 241, 239, 0.5));
+      }
+
+      .footer-content {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        color: var(--muted);
+        transition: color 0.25s ease;
+        font-weight: 500;
+      }
+
+      .footer-links a:hover {
+        color: var(--primary);
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .social-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(216, 139, 158, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        color: var(--primary);
+        font-size: 1.2rem;
+      }
+
+      .social-link:hover {
+        background: var(--primary);
+        color: #fff;
+        transform: translateY(-4px);
+      }
+
+      /* ==================== WHATSAPP FLOAT ==================== */
+      .whatsapp-float {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index: 30;
+        background: linear-gradient(135deg, #25d366, #128c7e);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 18px 40px rgba(18, 140, 126, 0.35);
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .whatsapp-float:hover {
+        transform: translateY(-6px) scale(1.1);
+        box-shadow: 0 25px 50px rgba(18, 140, 126, 0.45);
+      }
+
+      .whatsapp-float svg {
+        width: 30px;
+        height: 30px;
+        fill: #ffffff;
+      }
+
+      /* ==================== MOBILE MENU ==================== */
+      .mobile-menu-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(140, 91, 97, 0.18);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.9);
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        flex-direction: column;
+        transition: all 0.3s ease;
+      }
+
+      .mobile-menu-toggle:hover {
+        background: rgba(255, 255, 255, 1);
+        border-color: var(--primary);
+      }
+
+      .mobile-menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 1px;
+        background: var(--text);
+        transition: all 0.3s ease;
+      }
+
+      .mobile-menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .mobile-menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .nav-mobile {
+        display: none;
+        position: absolute;
+        inset: 68px auto auto 0;
+        margin: 1rem;
+        padding: 1.5rem;
+        background: rgba(255, 248, 245, 0.98);
+        border-radius: 24px;
+        box-shadow: var(--shadow-lg);
+        flex-direction: column;
+        gap: 1.2rem;
+        width: min(280px, calc(100vw - 2rem));
+        backdrop-filter: blur(10px);
+        animation: slideDown 0.3s ease-out;
+      }
+
+      .nav-mobile a {
+        color: var(--text);
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        transition: all 0.25s ease;
+      }
+
+      .nav-mobile a:hover {
+        background: rgba(216, 139, 158, 0.1);
+        color: var(--primary);
+      }
+
+      .nav-mobile.show {
+        display: flex;
+      }
+
+      /* ==================== ANIMATIONS ==================== */
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ==================== RESPONSIVE DESIGN ==================== */
+      @media (max-width: 1200px) {
+        .hero {
+          grid-template-columns: 1fr;
+          padding: 3rem 0 1rem;
+        }
+
+        .hero-copy {
+          text-align: center;
+          max-width: 100%;
+        }
+
+        .hero-actions {
+          justify-content: center;
+        }
+
+        .hero-image {
+          order: -1;
+        }
+
+        .hero-image::before {
+          display: none;
+        }
+
+        .about-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-text {
+          text-align: center;
+        }
+
+        .feature-list {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .feature-item {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        *{
+    max-width:100%;
+}
+        .nav-links {
+          display: none;
+        }
+
+        .nav-inner > .button-primary {
+          display: none;
+        }
+
+        .mobile-menu-toggle {
+          display: flex;
+        }
+
+        .container {
+          width: min(100%, calc(100% - 1.5rem));
+        }
+
+        section {
+          padding: 4rem 0;
+        }
+
+        .hero {
+          padding-top: 2rem;
+          gap: 2rem;
+        }
+
+        .section-title h2 {
+          font-size: clamp(1.75rem, 5vw, 2.5rem);
+        }
+
+        h1 {
+          font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+
+        .services-grid,
+        .gallery-grid,
+        .pricing-grid,
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .pricing-card.popular {
+          transform: scale(1);
+        }
+
+        .pricing-card.popular:hover {
+          transform: translateY(-12px);
+        }
+
+        .service-card,
+        .pricing-card,
+        .testimonial-card {
+          padding: 2rem;
+        }
+
+        .hero-card {
+          min-height: 400px;
+        }
+
+        .contact-grid {
+          gap: 1.5rem;
+        }
+
+        .nav-inner {
+          gap: 1rem;
+        }
+
+        .whatsapp-float {
+          width: 56px;
+          height: 56px;
+          right: 1rem;
+          bottom: 1rem;
+        }
+
+        .whatsapp-float svg {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          width: min(100%, calc(100% - 1rem));
+        }
+
+        .hero {
+          gap: 1.5rem;
+        }
+
+        .hero-copy > p {
+          font-size: 1rem;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .hero-actions button,
+        .hero-actions a {
+          width: 100%;
+        }
+
+        .nav-links {
+          gap: 1rem;
+        }
+
+        .brand {
+          font-size: 1.4rem;
+        }
+
+        .section-title span {
+          font-size: 0.75rem;
+        }
+
+        .about-image {
+          padding: 1rem;
+        }
+
+        .footer-links {
+          gap: 1rem;
+          font-size: 0.85rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          padding: 0.85rem 1rem;
+        }
+      }
+
+      /* ==================== ACCESSIBILITY ==================== */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Focus visible styles for better accessibility */
+      .button-primary:focus-visible,
+      .button-secondary:focus-visible,
+      .nav-links a:focus-visible,
+      .contact-form input:focus-visible,
+      .contact-form textarea:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header role="banner">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="brand" href="#home" aria-label="Sanika Makeover - Home"
+            >Sanika Makeover</a
+          >
+
+          <nav class="nav-links" role="navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <button
+            class="button-primary"
+            onclick="openWhatsApp()"
+            aria-label="Book Now via WhatsApp"
+          >
+            Book Now
+          </button>
+
+          <button
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav
+          class="nav-mobile"
+          id="navMobile"
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
+          <a href="#home" onclick="closeMobileMenu()">Home</a>
+          <a href="#about" onclick="closeMobileMenu()">About</a>
+          <a href="#services" onclick="closeMobileMenu()">Services</a>
+          <a href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+          <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+          <a href="#testimonials" onclick="closeMobileMenu()">Testimonials</a>
+          <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main">
+      <!-- Hero Section -->
+      <section id="home" class="container hero">
+        <div class="hero-copy">
+          <span class="eyebrow">✨ Premium Bridal Makeup</span>
+          <h1>Elegant bridal beauty, flawless every moment.</h1>
+          <p>
+            Transform your wedding day with luxury bridal makeup, professional
+            hairstyling, and personalized beauty services. Sanika Makeover
+            brings premium artistry and confidence to every bride, engagement,
+            and celebration.
+          </p>
+          <div class="hero-actions">
+            <button
+              class="button-primary"
+              onclick="openWhatsApp()"
+              aria-label="Book Now via WhatsApp"
+            >
+              Book Now
+            </button>
+            <a class="button-secondary" href="#contact">View Packages</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-card">
+            <img
+              src=https://images.pexels.com/photos/35538643/pexels-photo-35538643.jpeg
+              alt="Professional bridal makeup artist applying makeup to bride with precision"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="container">
+        <div class="section-title">
+          <span>About Us</span>
+          <h2>Makeup Artistry Crafted for Your Special Moments</h2>
+          <p>
+            With years of expertise in bridal and party makeup, we deliver
+            personalized beauty solutions that enhance your natural features and
+            bring your wedding vision to life.
+          </p>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <h3>Professional Beauty with a Personal Touch</h3>
+            <p>
+              From soft romantic looks to glamorous bold styles, we create
+              customized makeup designs that complement your unique features,
+              wedding theme, and personal preferences. Every bride deserves to
+              feel radiant, confident, and absolutely stunning on their special
+              day.
+            </p>
+            <p>
+              Our services go beyond makeup application—we provide expert
+              consultation, makeup trials, touch-up support, and complete hair
+              and makeup coordination for your entire wedding day.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span>✓</span>
+                <p>
+                  <strong>Premium Products:</strong> We use only the finest,
+                  long-lasting, hypoallergenic makeup brands trusted by
+                  professionals.
+                </p>
+              </li>
+              <li class="feature-item">
+                <span>✓</span>
+                <p>
+                  <strong>Custom Trials:</strong> Pre-wedding makeup trials to
+                  perfect your look before the big day.
+                </p>
+              </li>
+              <li class="feature-item">
+                <span>✓</span>
+                <p>
+                  <strong>All-Day Coverage:</strong> Professional-grade
+                  techniques ensuring your makeup stays flawless all day and
+                  night.
+                </p>
+              </li>
+              <li class="feature-item">
+                <span>✓</span>
+                <p>
+                  <strong>Complete Coordination:</strong> Hair and makeup
+                  synchronized perfectly for your complete bridal look.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img
+              src=https://images.pexels.com/photos/29371446/pexels-photo-29371446.jpeg
+              alt="Makeup artist with professional makeup tools and products in studio"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="container">
+        <div class="section-title">
+          <span>Our Services</span>
+          <h2>Complete Bridal & Party Beauty Solutions</h2>
+          <p>
+            Comprehensive makeup and hairstyling services tailored for your
+            special occasions and celebrations.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">💍</div>
+            <h3>Bridal Makeup</h3>
+            <p>
+              Luxurious bridal makeup with premium products, expert blending,
+              and all-day staying power. Includes professional trial and
+              consultation.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">✨</div>
+            <h3>Engagement Makeup</h3>
+            <p>
+              Stunning engagement look that captures your best self. Perfect for
+              photoshoots and celebration events with family and friends.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🎉</div>
+            <h3>Party & Event Makeup</h3>
+            <p>
+              Professional makeup for all occasions—weddings, receptions,
+              parties, and special celebrations. Bold or subtle, we've got you
+              covered.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">💇</div>
+            <h3>Professional Hairstyling</h3>
+            <p>
+              Expert hair design and styling that complements your makeup
+              perfectly. Includes creative updos, braids, and elegant styling.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🎨</div>
+            <h3>Makeup Trials</h3>
+            <p>
+              Pre-event makeup trials to refine your look. Test different styles
+              and products to ensure absolute satisfaction before your big day.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">💄</div>
+            <h3>Touch-Up Service</h3>
+            <p>
+              Professional makeup touch-ups throughout your event. Keep your
+              look fresh and flawless from morning to midnight.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">👗</div>
+            <h3>Bridal Team Services</h3>
+            <p>
+              Complete team makeup and hairstyling for bridesmaids, family
+              members, and wedding parties. Coordinated looks with professional
+              service.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">📸</div>
+            <h3>Photo-Ready Makeup</h3>
+            <p>
+              Specially formulated makeup for photography and videography.
+              Colors and techniques optimized for stunning photos under any
+              lighting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="container">
+        <div class="section-title">
+          <span>Gallery</span>
+          <h2>Our Bridal Portfolio & Work Showcase</h2>
+          <p>
+            Beautiful before & after transformations and stunning bridal looks
+            created for our happy clients.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img
+              src=https://images.pexels.com/photos/6530713/pexels-photo-6530713.jpeg
+              alt="Bridal makeup with elegant winged eyeliner and gold accents for wedding day"
+              loading="lazy"
+            />
+            <span class="gallery-label">Bridal Glam</span>
+          </div>
+
+          <div class="gallery-card">
+            <img
+              src=https://images.pexels.com/photos/16776698/pexels-photo-16776698.jpeg
+              alt="Engagement makeup with soft natural glowing look and defined eyes"
+              loading="lazy"
+            />
+            <span class="gallery-label">Engagement</span>
+          </div>
+
+          <div class="gallery-card">
+            <img
+              src=https://images.pexels.com/photos/29624010/pexels-photo-29624010.jpeg
+              alt="Bridal updo hairstyle with flowers and elegant braiding technique"
+              loading="lazy"
+            />
+            <span class="gallery-label">Hairstyling</span>
+          </div>
+
+          <div class="gallery-card">
+            <img
+              src=https://images.pexels.com/photos/35983900/pexels-photo-35983900.jpeg
+              alt="Party makeup with bold colors, shimmer, and professional blend techniques"
+              loading="lazy"
+            />
+            <span class="gallery-label">Party Makeup</span>
+          </div>
+
+          <div class="gallery-card">
+            <img
+              src=https://images.pexels.com/photos/34327720/pexels-photo-34327720.jpeg
+              alt="Bridesmaid group makeup with coordinated colors and professional finish"
+              loading="lazy"
+            />
+            <span class="gallery-label">Bridesmaid</span>
+          </div>
+
+          <div class="gallery-card">
+            <img
+              src=https://images.pexels.com/photos/35983894/pexels-photo-35983894.jpeg
+              alt="Bridal makeup close-up showing perfect blending, contour, and eye makeup"
+              loading="lazy"
+            />
+            <span class="gallery-label">Close-up</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="container">
+        <div class="section-title">
+          <span>Pricing</span>
+          <h2>Affordable Luxury Bridal Services</h2>
+          <p>
+            Premium makeup and hairstyling services at competitive prices.
+            Choose the package that fits your needs.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Basic Makeup</h3>
+            <div class="price">₹3,000<span>/</span> <span>session</span></div>
+            <p>
+              Perfect for parties and daily events with professional techniques.
+            </p>
+            <ul>
+              <li>Professional makeup application</li>
+              <li>Primer & base for longevity</li>
+              <li>Eyes, lips & blush</li>
+              <li>Duration: 45 minutes</li>
+              <li>Touch-up kit included</li>
+            </ul>
+            <button onclick="openWhatsApp('Basic Makeup Package')">
+              Book Now
+            </button>
+          </div>
+
+          <div class="pricing-card popular">
+            <div class="pricing-badge">Most Popular</div>
+            <h3>Bridal Package</h3>
+            <div class="price">₹8,000<span>/</span> <span>session</span></div>
+            <p>
+              Complete bridal makeup with trial, consultation, and all-day
+              support.
+            </p>
+            <ul>
+              <li>Professional makeup trial</li>
+              <li>Personalized consultation</li>
+              <li>Premium product selection</li>
+              <li>All-day stay formulas</li>
+              <li>Makeup touch-ups included</li>
+              <li>Duration: 90 minutes</li>
+              <li>Bridal emergency kit</li>
+            </ul>
+            <button onclick="openWhatsApp('Bridal Package')">Book Now</button>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Complete Package</h3>
+            <div class="price">₹12,000<span>/</span> <span>session</span></div>
+            <p>
+              Makeup & hairstyling with trial, coordination, and premium
+              service.
+            </p>
+            <ul>
+              <li>Professional makeup & hairstyle</li>
+              <li>Pre-wedding trial session</li>
+              <li>Expert styling advice</li>
+              <li>Premium products used</li>
+              <li>Full-day coverage included</li>
+              <li>Team coordination available</li>
+              <li>Duration: 120+ minutes</li>
+            </ul>
+            <button onclick="openWhatsApp('Complete Package')">Book Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="container">
+        <div class="section-title">
+          <span>Testimonials</span>
+          <h2>Love from Our Happy Clients</h2>
+          <p>
+            Real reviews from real brides and clients who trusted us with their
+            special moments.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="star-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p>
+              "Sanika's work was absolutely incredible! She transformed me into
+              the bride of my dreams. My makeup stayed perfect all day, through
+              photos, ceremonies, and dancing. Highly recommend!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=90"
+                alt="Profile picture of testimonial author Priya"
+                loading="lazy"
+              />
+              <div>
+                <h4>Priya Sharma</h4>
+                <span>Wedding 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p>
+              "The makeup trial was so helpful! Sanika listened to all my ideas
+              and created exactly what I had in mind. Professional, talented,
+              and absolutely worth every penny!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=90"
+                alt="Profile picture of testimonial author Anjali"
+                loading="lazy"
+              />
+              <div>
+                <h4>Anjali Patel</h4>
+                <span>Engagement 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p>
+              "Sanika and her team did makeup and hair for me and my
+              bridesmaids. Everyone looked stunning and coordinated. The
+              attention to detail was phenomenal!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=90"
+                alt="Profile picture of testimonial author Divya"
+                loading="lazy"
+              />
+              <div>
+                <h4>Divya Reddy</h4>
+                <span>Bridal Team 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container">
+        <div class="section-title">
+          <span>Get In Touch</span>
+          <h2>Book Your Makeup & Styling Appointment</h2>
+          <p>
+            Contact us to schedule a consultation, makeup trial, or book your
+            services for your special event.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" onsubmit="handleFormSubmit(event)">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+              aria-label="Full name"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email Address"
+              required
+              aria-label="Email address"
+            />
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+              aria-label="Phone number"
+            />
+
+            <input
+              type="date"
+              name="date"
+              placeholder="Event Date"
+              required
+              aria-label="Event date"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Tell us about your event, preferences, and any special requests..."
+              required
+              aria-label="Message"
+            ></textarea>
+
+            <button type="submit">Send Inquiry</button>
+          </form>
+
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <p>
+              Reach out to us via WhatsApp for quick responses and booking
+              support.
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <span>📱 WhatsApp</span>
+                <a
+                  href="https://wa.me/919270482959?text=Hi%20Sanika%20Makeover%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >+91 92704 82959</a
+                >
+              </div>
+
+              <div class="contact-item">
+                <span>📞 Phone</span>
+                <a href="tel:+919270482959">+91 92704 82959</a>
+              </div>
+
+              <div class="contact-item">
+                <span>✉️ Email</span>
+                <a href="mailto:info@sanikasmakeover.com"
+                  >info@sanikasmakeover.com</a
+                >
+              </div>
+
+              <div class="contact-item">
+                <span>📍 Location</span>
+                <a href="#">Service Area Coverage (City Wide)</a>
+              </div>
+
+              <div class="contact-item">
+                <span>⏰ Availability</span>
+                <p style="margin: 0">
+                  Mon - Sat: 10 AM - 9 PM<br />Sun: By Appointment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <h3
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                margin-bottom: 1rem;
+                color: var(--text-secondary);
+              "
+            >
+              Sanika Makeover
+            </h3>
+            <p style="max-width: 400px; margin: 0 auto">
+              Premium bridal makeup and hairstyling services for weddings,
+              engagements, and celebrations. Bringing luxury beauty to every
+              special moment.
+            </p>
+          </div>
+
+          <nav
+            class="footer-links"
+            role="navigation"
+            aria-label="Footer navigation"
+          >
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="social-links">
+            <a
+              href="https://instagram.com"
+              class="social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              >📷</a
+            >
+            <a
+              href="https://facebook.com"
+              class="social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              >f</a
+            >
+            <a
+              href="https://wa.me/919270482959"
+              class="social-link"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              >💬</a
+            >
+          </div>
+        </div>
+
+        <div
+          style="
+            border-top: 1px solid rgba(215, 155, 142, 0.18);
+            padding-top: 2rem;
+            text-align: center;
+          "
+        >
+          <p style="margin: 0; font-size: 0.9rem">
+            © 2024 Sanika Makeover. All rights reserved. | Made with ❤️ for
+            every bride
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a
+      href="https://wa.me/919270482959?text=Hi%20Sanika%20Makeover%2C%20I%20would%20like%20to%20book%20your%20services.%20Please%20let%20me%20know%20about%20availability%20and%20pricing."
+      class="whatsapp-float"
+      aria-label="Chat on WhatsApp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.6915026,13.4744748 C17.4156288,13.3599899 16.0151744,12.6893468 15.7799662,12.5968957 C15.5314101,12.4980495 15.3620122,12.4528054 15.1272231,12.7039605 C14.8924341,12.9551156 14.2081514,13.5769048 14.0231172,13.7589648 C13.8380829,13.9410248 13.5951962,13.9920199 13.3193225,13.8775351 C13.0434488,13.7630503 12.246816,13.4884167 11.2920804,12.6138692 C10.5279035,11.9431293 9.99837976,11.1257899 9.81363048,10.8501242 C9.62888121,10.5744585 9.79500633,10.3968898 9.91626819,10.2830137 C10.0270806,10.1818953 10.1643819,10.0210268 10.2783886,9.83598394 C10.3923952,9.65094106 10.4376395,9.51223869 10.5287461,9.32837852 C10.6198526,9.14451835 10.5705083,8.97628899 10.4960528,8.86180427 C10.4216014,8.74731954 9.88889146,7.34624384 9.63974895,6.75607024 C9.39614092,6.1821956 9.14871088,6.27058972 8.9717682,6.26137131 C8.8056131,6.25260025 8.63588571,6.25200129 8.46675286,6.25200129 C8.25174346,6.25200129 7.92527786,6.34306313 7.69014348,6.59414634 C7.45447632,6.84523954 6.87314985,7.51516901 6.87314985,8.91624471 C6.87314985,10.3173204 7.71045303,11.6696025 7.82474181,11.8516587 C7.9395039,12.0340196 9.88936099,15.4872017 13.0232025,16.9397619 C13.6637234,17.2343379 14.1674168,17.4013769 14.5566117,17.5247788 C15.1906051,17.7214194 15.7629577,17.6887859 16.2152854,17.6130144 C16.7237121,17.5281847 17.7690397,17.0076844 17.9975305,16.4312066 C18.2260212,15.8543333 18.2260212,15.3701233 18.1515622,15.2551496 C18.0771031,15.1404822 17.9140833,15.0888898 17.6915026,13.4744748 Z M12.0074315,19.5566515 C9.49696506,19.5566515 7.15174151,18.8124722 5.27701493,17.5247788 L1.64516541,18.3425036 L2.50064719,14.8444017 C1.08962838,12.9055152 0.291926437,10.5154464 0.291926437,7.94506916 C0.291926437,3.57424703 3.84708289,0.020091567 8.21790502,0.020091567 C12.5887272,0.020091567 16.1438836,3.57424703 16.1438836,7.94506916 C16.1438836,12.3158913 12.5887272,15.8703468 8.21790502,15.8703468 L8.21537054,15.8703468 C8.21537054,15.8703468 7.83276469,15.8717649 7.71914235,15.8826048 L7.71972156,15.8831045 L8.06223623,16.0282009 C9.09956243,16.5155055 10.005304,17.0139357 11.0091071,17.256819 C11.5473697,17.3914928 12.0657005,17.4526779 12.5733395,17.4526779 C12.5797452,17.4526779 12.5865578,17.452721 12.5929635,17.452721 L12.0074315,19.5566515 Z"
+          fill="#ffffff"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+      // ===== MOBILE MENU FUNCTIONALITY =====
+      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+      const navMobile = document.getElementById("navMobile");
+
+      mobileMenuToggle.addEventListener("click", () => {
+        navMobile.classList.toggle("show");
+        mobileMenuToggle.classList.toggle("active");
+        mobileMenuToggle.setAttribute(
+          "aria-expanded",
+          mobileMenuToggle.getAttribute("aria-expanded") === "true"
+            ? "false"
+            : "true",
+        );
+      });
+
+      function closeMobileMenu() {
+        navMobile.classList.remove("show");
+        mobileMenuToggle.classList.remove("active");
+        mobileMenuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !e.target.closest(".nav-inner") &&
+          !e.target.closest(".nav-mobile")
+        ) {
+          closeMobileMenu();
+        }
+      });
+
+      // ===== SCROLL REVEAL ANIMATION =====
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealOnScroll = () => {
+        revealElements.forEach((element) => {
+          const windowHeight = window.innerHeight;
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            element.classList.add("visible");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll();
+
+      // ===== WHATSAPP INTEGRATION =====
+      function openWhatsApp(package = "") {
+        const phoneNumber = "919270482959";
+        let message = "Hi Sanika Makeover, I would like to book your services.";
+
+        if (package) {
+          message = `Hi Sanika Makeover, I'm interested in the ${package}. Please let me know about availability and pricing.`;
+        }
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        // window.open(whatsappURL, "_blank");
+      }
+
+      // ===== CONTACT FORM HANDLING =====
+      async function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const formData = {
+        name: event.target.name.value,
+        email: event.target.email.value,
+        phone: event.target.phone.value,
+        eventDate: event.target.date.value,
+        message: event.target.message.value
+    };
+
+    try {
+        // Save inquiry to MongoDB through backend
+        const response = await fetch("http://localhost:5000/api/inquiries", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.message || "Failed to save inquiry");
+        }
+
+        // Create WhatsApp message
+        const whatsappMessage = `New Booking Inquiry:
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Event Date: ${formData.eventDate}
+Message: ${formData.message}`;
+
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        const phoneNumber = "919270482959";
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Open WhatsApp
+        // window.open(whatsappURL, "_blank");
+
+        // Reset form
+        event.target.reset();
+
+        // Show success message
+        alert(
+            "Thank you for your inquiry!"
+        );
+
+    } catch (error) {
+        console.error("Form submission error:", error);
+
+        alert(
+            "Sorry, something went wrong while submitting your inquiry. Please try again."
+        );
+    }
+}
+
+      // ===== SMOOTH SCROLL LINKS =====
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href !== "#") {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+              closeMobileMenu();
+            }
+          }
+        });
+      });
+
+      // ===== ACTIVE NAV LINK HIGHLIGHTING =====
+      window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(
+          ".nav-links a, .nav-mobile a",
+        );
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.style.color =
+            link.getAttribute("href") === `#${current}`
+              ? "var(--primary)"
+              : "inherit";
+        });
+      });
+
+      // ===== IMAGE LAZY LOADING OPTIMIZATION =====
+      if ("IntersectionObserver" in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.loading = "lazy";
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        document
+          .querySelectorAll("img")
+          .forEach((img) => imageObserver.observe(img));
+      }
+
+      // ===== PERFORMANCE: PREFETCH RESOURCES =====
+      if ("prefetch" in Link) {
+        const link = document.createElement("link");
+        link.rel = "prefetch";
+        link.href = "https://wa.me/";
+        document.head.appendChild(link);
+      }
+    </script>
+  </body>
+</html>
