@@ -65,6 +65,7 @@ If you did not request this code, please ignore this email.`
       // CHECK IF EMAIL WAS EXPLICITLY REJECTED
       // ===================================================
 
+      console.log("EMAIL SEND RESULT:", emailResult);
       if (
         emailResult &&
         emailResult.rejected &&
