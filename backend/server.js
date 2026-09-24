@@ -3,10 +3,12 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const express = require("express");
 const cors = require("cors");
-const mongoose = require("mongoose");
+
 require("dotenv").config();
 
 const inquiryRoutes = require("./routes/inquiryRoutes");
+const otpRoutes = require("./routes/otpRoutes");
+const connectDB = require("./config/db");
 
 const app = express();
 
@@ -17,16 +19,10 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/inquiries", inquiryRoutes);
+app.use("/api/otp", otpRoutes);
+connectDB();
 
-// Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log("MongoDB connected successfully!");
-  })
-  .catch((error) => {
-    console.error("MongoDB connection failed:", error.message);
-  });
+
 
 // Test route
 app.get("/", (req, res) => {
