@@ -405,7 +405,7 @@ if (verifyOtpButton) {
     otpStatus.textContent = "Verifying OTP...";
 
     try {
-      const response = await fetch("http://localhost:5000/api/otp/verify", {
+      const response = await fetch("https://sanika-makeover-backend.onrender.com/api/otp/verify", {
         method: "POST",
 
         headers: {
@@ -500,7 +500,7 @@ if (resendOtpButton) {
     clearOtpCountdown();
 
     try {
-      const response = await fetch("http://localhost:5000/api/otp/send", {
+      const response = await fetch("https://sanika-makeover-backend.onrender.com/api/otp/send", {
         method: "POST",
 
         headers: {
@@ -642,7 +642,7 @@ async function handleFormSubmit(event) {
     // SEND OTP
     // =================================================
 
-    const otpResponse = await fetch("http://localhost:5000/api/otp/send", {
+    const otpResponse = await fetch("https://sanika-makeover-backend.onrender.com/api/otp/send", {
       method: "POST",
 
       headers: {
@@ -688,7 +688,7 @@ async function handleFormSubmit(event) {
     // SAVE INQUIRY TO DATABASE
     // =================================================
 
-    const inquiryResponse = await fetch("http://localhost:5000/api/inquiries", {
+    const inquiryResponse = await fetch("https://sanika-makeover-backend.onrender.com/api/inquiries", {
       method: "POST",
 
       headers: {
