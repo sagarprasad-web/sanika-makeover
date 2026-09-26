@@ -18,16 +18,23 @@ const sendEmail = async (to, subject, text) => {
   }
 
   try {
-    const result = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: sender,
       to: [to],
       subject,
       text,
     });
 
-    return result;
+    if (error) {
+      const errorMessage = error?.message || "Unknown Resend email error";
+      console.error("Resend email error:", errorMessage);
+      throw new Error(`Resend email failed: ${errorMessage}`);
+    }
+
+    return data;
   } catch (error) {
     const message = error?.message || "Unknown Resend email error";
+    console.error("Resend email error:", message);
     throw new Error(`Resend email failed: ${message}`);
   }
 };
