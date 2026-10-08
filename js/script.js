@@ -1,4 +1,4 @@
-// =====================================================
+﻿// =====================================================
 // SANIKA MAKEOVER - MAIN JAVASCRIPT
 // =====================================================
 
@@ -705,7 +705,7 @@ async function handleFormSubmit(event) {
     // =================================================
 
     if (!inquiryResponse.ok) {
-      throw new Error(inquiryResult.message || "Failed to submit inquiry.");
+      throw new Error(inquiryResult.message || "Failed to submit your enquiry.");
     }
 
     // =================================================
@@ -842,11 +842,11 @@ function showSuccessMessage() {
         ✓
       </div>
 
-      <h3>Inquiry Submitted</h3>
+      <h3>Enquiry submitted</h3>
 
       <p>
         Your email has been verified and
-        your inquiry has been submitted successfully.
+        your enquiry has been submitted successfully.
       </p>
 
       <span>
@@ -1204,3 +1204,13 @@ window.addEventListener(
 );
 
 revealOnScroll();
+// Close the responsive navigation after choosing a destination or pressing Escape.
+if (navMobile) {
+  navMobile.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMobileMenu();
+});
